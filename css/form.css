@@ -1,0 +1,351 @@
+/*
+
+  Instructions:
+
+  Copy this code to use Magic Input ⬇️ 
+
+*/
+
+.magic-input, .magic-input * {
+  box-sizing: border-box;
+}
+
+.magic-input {
+  position: relative;
+  padding: 0 10px 10px 0;
+  font-family: monospace;
+  font-size: 18px;
+  background-color: #CECDCE;
+}
+
+.magic-input__focus-thing {
+  display: none;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  background: #0031D2;
+  opacity: .15;
+}
+
+.magic-input__focus-thing::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 12px 12px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+.magic-input__focus-thing::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 0 0 12px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+.magic-input .magic-input__label {
+  position: absolute;
+  left: 17px;
+  top: 9px;
+  opacity: 0;
+  font-size: 14px;
+  transition: transform 200ms;
+}
+
+.magic-input__corners::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+.magic-input__corners::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 0 10px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+.magic-input__bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  background-color: #E5E5E5;
+}
+
+.magic-input__bottom::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 0;
+  border-color: transparent #CECDCE transparent transparent;
+}
+
+.magic-input__input {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 9px 14px 10px;
+  border: 2px solid #000;
+  font: inherit;
+}
+
+.magic-input__input:not(:placeholder-shown) {
+  padding: 16px 14px 3px;
+}
+
+.magic-input .magic-input__input:not(:placeholder-shown) + label {
+  pointer-events: none;
+  opacity: .75;
+  transform: translate(0, -35%);
+}
+
+.magic-input .magic-input__input:not(:placeholder-shown) + label::after {
+  content: ":";
+}
+
+.magic-input__input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.magic-input:focus-within .magic-input__focus-thing {
+  display: block;
+}
+
+.magic-input:focus-within {
+  background-color: #BFBEBF;
+}
+
+.magic-input:focus-within .magic-input__bottom {
+  background-color: #D9D9D9;
+}
+
+.magic-input:focus-within .magic-input__bottom::before {
+  border-color: transparent #BFBEBF transparent transparent;
+}
+
+/* button reset */
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  cursor: pointer;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+
+/* button reset */
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.magic-button, .magic-button * {
+  box-sizing: border-box;
+}
+
+/* define the overall styles */
+.magic-button {
+  overflow: hidden; /* allow the inner button to move but get cut off */
+  position: relative;
+  left: -3px;
+  display: inline-block;
+  padding: 0 13px 13px 0; /* give room on the right and bottom for the button's shadow */
+  white-space: nowrap; /* don't let it wrap to multiple lines */
+  font-family: monospace;
+  font-size: 18px;
+  user-select: none;
+}
+
+.magic-button__focus-thing {
+  display: none;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  background: #0031D2;
+  opacity: .15;
+}
+
+.magic-button__focus-thing::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 6px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 12px 12px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+.magic-button__focus-thing::after {
+  position: absolute;
+  content: "";
+  bottom: 6px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 0 0 12px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+/* define the container that will move when the button's pressed */
+.magic-button__container {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 100%;
+  height: 100%;
+  transition: transform .08s;
+}
+
+/* white triangle (top right) to cover the gray shadow */
+.magic-button__corners::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 6px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+/* white triangle (bottom left) to cover the gray shadow */
+.magic-button__corners::after {
+  position: absolute;
+  content: "";
+  bottom: 6px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 0 10px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+/* inner text (duplicated) one instance is used to size the overall container and the other one moves as the button is pressed */
+.magic-button__text {
+  position: relative;
+  display: inline-block;
+  padding: 9px 14px 10px;
+  background-color: #000;
+  color: #fff;
+}
+
+/* the button text element that's used to size the overall .magic-button container */
+.magic-button > .magic-button__text {
+  visibility: hidden;
+  padding: 9px 17px 13px 14px;
+}
+
+/* the button text that's visible and moves as the button is pressed */
+.magic-button__container .magic-button__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.magic-button__right-side {
+    content: "";
+    position: absolute;
+    right: 6px;
+    top: 0;
+    width: 10px;
+    height: calc(100% - 6px);
+    background-color: #CECDCE;
+}
+
+/* bottom gray shadow */
+.magic-button__bottom {
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  height: 10px;
+  width: calc(100% - 6px);
+  background-color: #E5E5E5;
+}
+
+/* bottom right triangle for bottom shadow -- matches the color of the right shadow */
+.magic-button__bottom::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 0;
+  border-color: transparent #CECDCE transparent transparent;
+}
+
+/* hover styles -- makes the shadows a little bit darker */
+.magic-button:focus .magic-button__right-side, .magic-button:hover .magic-button__right-side {
+  background-color: #BFBEBF;
+}
+
+.magic-button:focus .magic-button__bottom, .magic-button:hover .magic-button__bottom {
+  background-color: #D9D9D9;
+}
+
+.magic-button:focus .magic-button__bottom::before, .magic-button:hover .magic-button__bottom::before {
+  border-color: transparent #BFBEBF transparent transparent;
+}
+
+/* sets a custom focus outline that looks better than the default one */
+.magic-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.magic-button:focus .magic-button__focus-thing {
+  display: block;
+}
+
+/* moves the button down and to the right when it's clicked */
+.magic-button:active .magic-button__container {
+  transform: translate(13px, 13px);
+}
+
+.magic-button:active .magic-button__focus-thing {
+  display: none;
+}

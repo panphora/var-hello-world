@@ -1,0 +1,18 @@
+body {
+  padding: 4rem;
+  font-size: 18px;
+  font-family: monospace;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  margin: 1em 0;
+}
+
+.x {
+  margin: 0 auto;
+  max-width: 900px;
+}
