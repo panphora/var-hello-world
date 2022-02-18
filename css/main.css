@@ -53,6 +53,7 @@ a:hover {
 
 .parent-container {
   display: flex;
+  margin-bottom: 5rem;
 }
 
 .left-container {
@@ -65,6 +66,10 @@ a:hover {
   margin-right: calc(var(--gutter-width) * -.75);
 }
 
+.right-container__inner-shrunk {
+  padding: .5rem 7rem;
+}
+
 
 
 
@@ -74,11 +79,18 @@ a:hover {
   background-color: #F1F3F5;
 }
 
-.info-box__icon {
+.info-box__main-icon {
   position: absolute;
   top: 12px;
   left: -78px;
   width: 60px;
+}
+
+.info-box__inner-icon {
+  position: relative;
+  left: -25%;
+  margin: -1em auto 1.5em;
+  width: 26px;
 }
 
 .creativity-container {
@@ -93,7 +105,32 @@ a:hover {
 
 
 
+@media (max-width: 990px) {
+  .parent-container {
+    display: block;
+    margin-bottom: 7rem;
+  }
 
+  .left-container {
+    width: 100%;
+    margin: 0 0 4rem 0;
+  }
+
+  .right-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .right-container__inner-shrunk {
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1.5rem;
+  }
+}
 
 
 
