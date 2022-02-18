@@ -131,6 +131,14 @@ a:hover {
   margin-top: 1.5rem;
 }
 
+.bold-arrow {
+  position: absolute;
+  width: 160px;
+  top: -40px;
+  right: 180px;
+  transform: rotate(14deg);
+}
+
 .parentheses-container {
   display: inline-block;
   margin-bottom: 1rem;
@@ -199,6 +207,10 @@ a:hover {
 @media (max-width: 1100px) {
   .parent-container--shift-right-and-up {
     margin-top: -2rem;
+  }
+
+  .bold-arrow {
+    display: none;
   }
 }
 
