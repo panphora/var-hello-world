@@ -347,3 +347,14 @@ button::-moz-focus-inner {
 .magic-button:active .magic-button__focus-thing {
   display: none;
 }
+
+
+@media (max-width: 640px) {
+  .magic-input {
+    font-size: 18px;
+  }
+
+  .magic-button {
+    font-size: 18px;
+  }
+}
