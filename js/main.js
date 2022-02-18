@@ -10,6 +10,10 @@
 */
 
 function initConvertKitForm ({formElem}) {
+  if (!formElem) {
+    return;
+  }
+
   formElem.addEventListener("submit", function (event) {
     event.preventDefault();
     let formDataObj = new FormData(formElem);
@@ -48,20 +52,20 @@ function initConvertKitForm ({formElem}) {
         signupSuccess({formElem});
       } else {
         if (res.errors.fields.includes("email_address")) {
-          crostini("Error: Invalid email address.", {type: "error"});
+          crostini("Error: Invalid email.", {type: "error"});
         } else {
-          crostini("Error: Please try again.", {type: "error"});
+          crostini("Error: Try again.", {type: "error"});
         }
       }
     })
     .catch(err => {
-      crostini("Error signing up, please try again.", {type: "error"});
+      crostini("Error: Try again.", {type: "error"});
     });
   });
 }
 
 function signupSuccess ({formElem}) {
-  crostini("Success! Check email to confirm!");
+  crostini("Successfully signed up!");
   formElem.reset();
 }
 
