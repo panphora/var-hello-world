@@ -1,7 +1,15 @@
 body {
   padding: 4rem;
-  font-size: 18px;
-  font-family: monospace;
+  line-height: 1.44;
+  font-size: 22px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+}
+
+video, img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
 }
 
 ul {
@@ -10,6 +18,24 @@ ul {
 
 li {
   margin: 1em 0;
+}
+
+a {
+  color: #3B5BDB;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.invis-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.invis-link:hover {
+  text-decoration: underline;
 }
 
 .x {

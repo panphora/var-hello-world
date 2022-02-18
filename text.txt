@@ -1,60 +1,60 @@
-I miss when the web developed new ways of communication every day — google wave, twitter’s open API, dropbox’s public folder...
-I always thought the internet was a canvas of infinite possibility
-the formula was simple:
-anyone can create
-you can communicate with anyone
-unlimited creativity
-but the web hasn’t developed in the way I thought
-it seems to get less collaborative, less creative, and less open with time
-what we ended up with was...
-platforms
-separate monoliths
-no shared code among devs
-not a lot of collaboration among users
-users + devs don’t drive direction of the platform
-infinite feed of updates
-tailored to individuals
-unlimited consumption
-what if there was an alternative to platforms?
-an open canvas where developers and creative people of all types could remix 
-each other’s work and build on top of each other’s projects?
-        is a website where every change you make to it is permanent and anyone
-can send custom code to anyone else
-&raquo; more details
-I’m hoping it leads to a wilder web
-deeper collaboration
-faster innovation
-users who take control and define their own platforms
-&raquo; example code
-will you join me?
-&raquo; faq
-my name is david. the internet has always felt like my first home. I want to see what it would look like if everyone could share in its tremendous power.
-var is a static web host where every page is remixable by default
-one click and you have a copy of any web page hosted on the platform.
-not only that, but the front-end code (HTML, CSS, JS) is treated as the source of truth. Whatever changes the owner makes to a page (through DevTools, some custom JS, or clicking a button that does something) is saved permanently to the DB
-this makes it possible for front-end devs to create interactive applications just by adding a JS plugin to the page
-also — if people know your website’s address (e.g. var.so/abc123) they’ll be able to send you code that (if you accept it) will run on your page, so there’s a social aspect as well
-I'm hoping projects like this idea will lead to a renaissance of blogs, personal websites, and remixable apps that push our normal conception of what a website is to the breaking point.
-you can send your friends (or anonymous internet strangers) friendly “viruses” that alter their website and do whatever fun things you can imagine
-defend your site against a hoard of tiny alients that want to eat all your written text — mmm text yummy!
-plant a garden around your favorite poem and watch vines from the garden intertwine with the poem's words
-send your friend a set of monarch butterflies that fly all over their site and redesign it with colors you choose
-how do i use it?
-you create a website on var.so, alter it however you want, and message your friends with code or text using the built-in messenger
-how is it safe is it? is it secure?
-any type of code can be run, so make sure you trust where it’s coming from before you accept it
-your website will be backed up before you accept code, so you can always get back to a previous version
-how do I save the changes forever?
-by default, any change made to your website will be permanent
-how do I get my website back if it’s destroyed?
-you can click “save website backup” to backup your website any time
-your website is also backed up before you accept any new code, so you can always restore a previous version
-can I have a preview of what the code will do?
-we won’t have this feature at launch, but you can always test it out and if you don’t like what it does, restore your website from its last backup
-what happens when I accept code?
-it will immediately be added to your website and run. any changes it makes will be permanent
-but if you don’t like what it does, you can restore a previous version of your website
-can I see the code before I accept it?
-yes, you’ll be able to view the full code by clicking “open code” before acceting or rejecting it
-so it’s like recursively travelling into a code space inside of a code space?
-yes
+<p>I miss when the web developed new ways of communication every day — google wave, twitter’s open API, dropbox’s public folder...</p>
+<p>I always thought the internet was a canvas of infinite possibility</p>
+<p>the formula was simple:</p>
+<p>anyone can create</p>
+<p>you can communicate with anyone</p>
+<p>unlimited creativity</p>
+<p>but the web hasn’t developed in the way I thought</p>
+<p>it seems to get less collaborative, less creative, and less open with time</p>
+<p>what we ended up with was...</p>
+<p>platforms</p>
+<p>separate monoliths</p>
+<p>no shared code among devs</p>
+<p>not a lot of collaboration among users</p>
+<p>users + devs don’t drive direction of the platform</p>
+<p>infinite feed of updates</p>
+<p>tailored to individuals</p>
+<p>unlimited consumption</p>
+<p>what if there was an alternative to platforms?</p>
+<p>an open canvas where developers and creative people of all types could remix </p>
+<p>each other’s work and build on top of each other’s projects?</p>
+        <p>is a website where every change you make to it is permanent and anyone</p>
+<p>can send custom code to anyone else</p>
+<p>&raquo; more details</p>
+<p>I’m hoping it leads to a wilder web</p>
+<p>deeper collaboration</p>
+<p>faster innovation</p>
+<p>users who take control and define their own platforms</p>
+<p>&raquo; example code</p>
+<p>will you join me?</p>
+<p>&raquo; faq</p>
+<p>my name is david. the internet has always felt like my first home. I want to see what it would look like if everyone could share in its tremendous power.</p>
+<p>var is a static web host where every page is remixable by default</p>
+<p>one click and you have a copy of any web page hosted on the platform.</p>
+<p>not only that, but the front-end code (HTML, CSS, JS) is treated as the source of truth. Whatever changes the owner makes to a page (through DevTools, some custom JS, or clicking a button that does something) is saved permanently to the DB</p>
+<p>this makes it possible for front-end devs to create interactive applications just by adding a JS plugin to the page</p>
+<p>also — if people know your website’s address (e.g. var.so/abc123) they’ll be able to send you code that (if you accept it) will run on your page, so there’s a social aspect as well</p>
+<p>I'm hoping projects like this idea will lead to a renaissance of blogs, personal websites, and remixable apps that push our normal conception of what a website is to the breaking point.</p>
+<p>you can send your friends (or anonymous internet strangers) friendly “viruses” that alter their website and do whatever fun things you can imagine</p>
+<p>defend your site against a hoard of tiny alients that want to eat all your written text — mmm text yummy!</p>
+<p>plant a garden around your favorite poem and watch vines from the garden intertwine with the poem's words</p>
+<p>send your friend a set of monarch butterflies that fly all over their site and redesign it with colors you choose</p>
+<p>how do i use it?</p>
+<p>you create a website on var.so, alter it however you want, and message your friends with code or text using the built-in messenger</p>
+<p>how is it safe is it? is it secure?</p>
+<p>any type of code can be run, so make sure you trust where it’s coming from before you accept it</p>
+<p>your website will be backed up before you accept code, so you can always get back to a previous version</p>
+<p>how do I save the changes forever?</p>
+<p>by default, any change made to your website will be permanent</p>
+<p>how do I get my website back if it’s destroyed?</p>
+<p>you can click “save website backup” to backup your website any time</p>
+<p>your website is also backed up before you accept any new code, so you can always restore a previous version</p>
+<p>can I have a preview of what the code will do?</p>
+<p>we won’t have this feature at launch, but you can always test it out and if you don’t like what it does, restore your website from its last backup</p>
+<p>what happens when I accept code?</p>
+<p>it will immediately be added to your website and run. any changes it makes will be permanent</p>
+<p>but if you don’t like what it does, you can restore a previous version of your website</p>
+<p>can I see the code before I accept it?</p>
+<p>yes, you’ll be able to view the full code by clicking “open code” before acceting or rejecting it</p>
+<p>so it’s like recursively travelling into a code space inside of a code space?</p>
+<p>yes</p>
