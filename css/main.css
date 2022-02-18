@@ -1,3 +1,7 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
 body {
   padding: 4rem;
   line-height: 1.44;
@@ -18,10 +22,11 @@ p {
 
 ul {
   margin: 0;
+  padding: 0;
 }
 
 li {
-  margin: 1em 0;
+  margin: 0 0 .5em 0;
 }
 
 a {
@@ -117,8 +122,41 @@ a:hover {
   transform: translateY(50%);
 }
 
+.platforms-text-container {
+  position: relative;
+  left: 30%;
+  margin-top: 1.5rem;
+}
+
+.parentheses-container {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 4px 24px;
+  background-image: url(/media/paren-left.svg), url(/media/paren-right.svg);
+  background-position: left center, right center;
+  background-repeat: no-repeat, no-repeat;
+}
 
 
+
+
+
+
+@media (max-width: 1200px) {
+  .parent-container--shift-right-and-up {
+    margin-top: -4.5rem;
+  }
+
+  .platforms-text-container {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .parent-container--shift-right-and-up {
+    margin-top: -2rem;
+  }
+}
 
 @media (max-width: 990px) {
   .parent-container {
@@ -126,12 +164,16 @@ a:hover {
     margin-bottom: 7rem;
   }
 
-  .left-container {
+  .parent-container--shift-right-and-up {
+    margin-right: 0;
+  }
+
+  .left-container, .parent-container--shift-right-and-up .left-container {
     width: 100%;
     margin: 0 0 4rem 0;
   }
 
-  .right-container {
+  .right-container, .parent-container--shift-right-and-up .right-container {
     width: 100%;
     margin: 0;
   }
@@ -139,11 +181,24 @@ a:hover {
   .right-container__inner-shrunk {
     padding: 0;
   }
+
+  .platforms-text-container {
+    left: 0;
+    margin-left: 20%;
+  }
 }
 
 @media (max-width: 600px) {
   body {
     padding: 1.5rem;
+  }
+
+  ul {
+    padding-left: 1.5rem;
+  }
+
+  .platforms-text-container {
+    margin-left: 5%;
   }
 }
 

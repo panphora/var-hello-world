@@ -13,7 +13,6 @@
 .magic-input {
   position: relative;
   padding: 0 10px 10px 0;
-  font-family: monospace;
   font-size: 18px;
   background-color: #CECDCE;
 }
@@ -187,7 +186,6 @@ button::-moz-focus-inner {
   display: inline-block;
   padding: 0 13px 13px 0; /* give room on the right and bottom for the button's shadow */
   white-space: nowrap; /* don't let it wrap to multiple lines */
-  font-family: monospace;
   font-size: 18px;
   user-select: none;
 }
