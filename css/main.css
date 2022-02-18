@@ -70,6 +70,21 @@ a:hover {
   padding: .5rem 7rem;
 }
 
+.parent-container--shift-right-and-up {
+  margin-top: -6.5rem;
+  margin-right: calc(var(--gutter-width) * -.75);
+}
+
+.parent-container--shift-right-and-up .left-container {
+  width: calc(60% - 3rem);
+  margin-right: 3rem;
+  margin-left: 0;
+}
+
+.parent-container--shift-right-and-up .right-container {
+  width: 40%;
+}
+
 
 
 
