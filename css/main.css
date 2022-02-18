@@ -137,6 +137,17 @@ a:hover {
   background-repeat: no-repeat, no-repeat;
 }
 
+.var-inline-logo {
+  display: inline-block;
+  position: relative;
+  bottom: -8px;
+  width: 90px;
+}
+
+.var-inline-logo img {
+  display: inline;
+}
+
 
 
 
