@@ -15,8 +15,8 @@ code up landing page
   √ make it look good on mobile
 √ connect and deploy website
 √ redirect var.so to hello-world.var.so
-og image
-favicon
+√ og image
+√ favicon
 √ convertkit signup form
 √ convertkit automation
 √ first email in email sequence
