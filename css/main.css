@@ -151,6 +151,32 @@ a:hover {
   display: inline;
 }
 
+.warp-container {
+  position: relative;
+  max-width: 315px;
+  margin: 0 auto 3rem;
+}
+
+.warp-container img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: rotate(0deg) scale(.85);
+  animation: rotating 7s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg) scale(.85);
+  }
+  to {
+    transform: rotate(360deg) scale(.85);
+  }
+}
+
 
 
 

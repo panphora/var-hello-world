@@ -20,3 +20,8 @@ convertkit signup form
 convertkit automation
 first email in email sequence
 test sign up form
+make sure <head> on all 4 pages looks right
+    details
+    faq
+    code
+    front page
