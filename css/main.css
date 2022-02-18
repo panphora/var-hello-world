@@ -177,6 +177,10 @@ a:hover {
   }
 }
 
+.flex-on-desktop {
+  display: flex;
+}
+
 
 
 
@@ -225,6 +229,10 @@ a:hover {
   .platforms-text-container {
     left: 0;
     margin-left: 20%;
+  }
+
+  .flex-on-desktop {
+    display: block;
   }
 }
 
