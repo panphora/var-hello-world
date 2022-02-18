@@ -22,7 +22,6 @@ p {
 
 ul {
   margin: 0;
-  padding: 0;
 }
 
 li {
@@ -36,6 +35,10 @@ a {
 
 a:hover {
   text-decoration: none;
+}
+
+.ul-no-padding {
+  padding: 0;
 }
 
 .invis-link {
@@ -204,7 +207,7 @@ a:hover {
     padding: 1.5rem;
   }
 
-  ul {
+  .ul-no-padding, ul {
     padding-left: 1.5rem;
   }
 

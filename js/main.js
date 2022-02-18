@@ -2,10 +2,8 @@
 
   EXAMPLE
 
-  <form action="https://app.convertkit.com/forms/2980971/subscriptions" method="POST">
+  <form action="https://app.convertkit.com/forms/3004945/subscriptions" method="POST">
     <input id="email" type="email" name="email_address" placeholder="Email address">
-    <div class="spacer"></div>
-    <div class="spacer"></div>
     <button type="submit">Get early access</button>
   </form>   
 

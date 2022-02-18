@@ -78,7 +78,7 @@
       <div class="platforms-text-container">
         <div style="font-size: 32px; margin-bottom: .5rem;">platforms</div>
         <div class="parentheses-container">separate<br>monoliths</div>
-        <ul>
+        <ul class="ul-no-padding">
           <li>no shared code among devs</li>
           <li>not a lot of collaboration among users</li>
           <li>users + devs don’t drive direction of the platform</li>
@@ -104,7 +104,7 @@
   </div>
   <p>what if there was an alternative to platforms?</p>
   <p>an open canvas where developers and creative people of all types could remix each other’s work and build on top of each other’s projects?</p>
-  <p><div class="var-inline-logo"><img alt="var logo" src="/media/logo.svg"></div> is a website where every change you make to it is permanent and anyone can send custom code to anyone else <a href="#">&raquo; more details</a></p>
+  <p><span class="var-inline-logo"><img alt="var logo" src="/media/logo.svg"></span> is a website where every change you make to it is permanent and anyone can send custom code to anyone else <a href="#">&raquo; more details</a></p>
   <p>I’m hoping it leads to a wilder web</p>
   <ul style="margin-bottom: 3rem;">
     <li>deeper collaboration</li>
@@ -113,24 +113,28 @@
   </ul>
   <p><a href="#">&raquo; example code</a></p>
   <p>will you join me?</p>
-  <div class="magic-input" style="margin-bottom: 1rem;">
-    <span class="magic-input__bottom"></span>
-    <span class="magic-input__corners"></span>
-    <span class="magic-input__focus-thing"></span>
-    <input id="email" class="magic-input__input" type="email" placeholder="Your email address">
-    <label for="email" class="magic-input__label">Your email address</label>
-  </div>
-  <button class="magic-button" ontouchstart="">
-    <span class="magic-button__text">I desire chaos and creation</span>
-    <span class="magic-button__container">
-      <span class="magic-button__right-side"></span>
-      <span class="magic-button__bottom"></span>
-      <span class="magic-button__corners"></span>
-      <span class="magic-button__focus-thing"></span>
-      <span class="magic-button__text">I desire chaos and creation</span>
-    </span>
-  </button>
-  <p><a href="#">&raquo; faq</a></p>
+  <form style="margin-bottom: 3rem;">
+    <div class="magic-input" style="margin-bottom: 1rem;">
+      <span class="magic-input__bottom"></span>
+      <span class="magic-input__corners"></span>
+      <span class="magic-input__focus-thing"></span>
+      <input id="email" class="magic-input__input" type="email" placeholder="Your email address">
+      <label for="email" class="magic-input__label">Your email address</label>
+    </div>
+    <div style="display: flex;">
+      <button class="magic-button" ontouchstart="">
+        <span class="magic-button__text">I desire chaos and creation</span>
+        <span class="magic-button__container">
+          <span class="magic-button__right-side"></span>
+          <span class="magic-button__bottom"></span>
+          <span class="magic-button__corners"></span>
+          <span class="magic-button__focus-thing"></span>
+          <span class="magic-button__text">I desire chaos and creation</span>
+        </span>
+      </button>
+      <a style="margin-left: 1rem; padding: 10px;" href="#">&raquo; faq</a>
+    </div>
+  </form>
   <p>my name is david. the internet has always felt like my first home. I want to see what it looks like when everyone gets a chance to contribute</p>
   <p>var is a static web host where every page is remixable by default</p>
   <p>one click and you have a copy of any web page hosted on the platform.</p>
